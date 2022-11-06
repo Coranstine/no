@@ -1,0 +1,243 @@
+
+*{
+    box-sizing: border-box;
+}
+
+
+body { 
+    margin: 0;
+    background-image:  url(https://img.freepik.com/vector-gratis/fondo-ilustracion-flores-acuarela_52683-80608.jpg?w=900&t=st=1666125720~exp=1666126320~hmac=4bb6e24d50f3e1a8f52410fdbfe9c9884914592e22fe4fa4dbb8a01625dc7ae7);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.barra-navegador {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    background: linear-gradient(180deg, #FCF5EA 43.75%, rgba(252, 245, 234, 0.653543) 67.19%, rgba(252, 245, 234, 0) 100%);
+    width: auto;
+    height: 50px;
+    top: 50px; 
+    nav-right: 60px;
+   
+
+ }
+ 
+ .barra-navegador li{
+    display: inline;
+    text-align: center;
+    margin: 2px;
+    padding-right: 20px;
+    padding-left: 50px;
+    font-size:medium;
+    color: #602323;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+ }
+
+ .barra-navegador li:hover{
+    background-color: #e5aeda;
+    color:aliceblue;
+ }
+
+ 
+ .Principal{
+    border: 3px solid pink;
+    border-style: groove;
+    border-radius: 12px;
+    background: linear-gradient(rgb(235, 108, 66));
+    padding: 10px;
+    width: 200px;
+    margin: 5%;
+    display: auto;
+   
+ }
+ .Principal ul li{
+    list-style-type: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 0px;
+    font-size: 15px;
+    
+
+}
+
+.Principal h1{
+    display:inline-flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #92265a;
+    font-size: larger; 
+    
+
+ }
+
+ @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.Description {
+    font-family: 'Dancing Script', cursive;
+    flex: 70%;
+    background-color: #92265a;
+
+}
+
+.Buscar input{
+    background-attachment: fixed;
+    background-color:rgb(248, 222, 243);
+    width: 300px;
+    height: 30px;
+    }
+
+.grid-Logo--Circular{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: auto;
+    animation: mymove 5s infinite;
+    }
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left:800px}
+    
+}
+
+.grid-Logo--Circular img {
+    width: 250px;
+    height: 250px;
+}
+
+
+.VitaByCora{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fd69e9;  
+    font-size: 50px;
+    text-shadow: 6px -7px 12px rgba(202,109,135,0.63);
+}
+
+.VitaByCora span { 
+    color:rgb(46, 41, 41); font-family: 'Sans serif thin';
+    font-size: 30px;
+    font-style:oblique;
+    }
+
+
+.Press-On {
+    text-align: center;
+    float: right;
+    color: #602323;
+    font-family: Helvetica, sans-serif; font-size: medium;
+    font-size: 25px;
+}
+
+
+
+.footer {
+    background-color:rgb(223, 200, 186);
+    background-position: absolute;
+    display: inline;
+    justify-content: center;
+    padding: 70px;
+    height: 100vh;
+    
+}
+
+.temblor__lento{
+    display: center;
+}
+
+
+.grid-Carrito{
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-auto-rows: 160px;
+    grid-template-areas: 
+    "IMG1 IMG2"
+    "IMG3 IMG4"
+    "IMG5 IMG6"
+    ;
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-Carrito > img {
+    height: auto;
+    width: 50%;
+    background-color:antiquewhite;
+
+}
+
+
+.ListaDeDeseos{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background: rgb(248, 187, 233);
+    font-size: larger;
+    color: #92265a;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.temblor__lento:hover {
+    animation: agitar 4s;
+    animation-iteration-count: infinite;}
+    .temblor:hover {
+        animation: agitar 0.8s;
+        animation-iteration-count: infinite;
+    }
+    .temblor__lento:hover {
+        animation: agitar 4s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes agitar {
+        0% {
+            transform: translate(1px, 1px) rotate(0deg);
+        }
+        10% {
+            transform: translate(-1px, -2px) rotate(-1deg);
+        }
+        20% {
+            transform: translate(-3px, 0px) rotate(1deg);
+        }
+        30% {
+            transform: translate(3px, 2px) rotate(0deg);
+        }
+        40% {
+            transform: translate(1px, -1px) rotate(1deg);
+        }
+        50% {
+            transform: translate(-1px, 2px) rotate(-1deg);
+        }
+        60% {
+            transform: translate(-3px, 1px) rotate(0deg);
+        }
+        70% {
+            transform: translate(3px, 1px) rotate(-1deg);
+        }
+        80% {
+            transform: translate(-1px, 2px) rotate(-1deg);
+        }
+        90% {
+            transform: translate(-1px, 2px) rotate(-1deg);
+        }
+        100% {
+            transform: translate(1px, -2px) rotate(-1deg);
+        }
+    }
+   
+    @media screen and (max-width: 690px) {
+        .barra-navegador, .Principal{
+             flex-direction:row;
+    }
+}
